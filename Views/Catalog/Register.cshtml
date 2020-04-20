@@ -1,0 +1,96 @@
+@{
+    ViewData["Title"] = "Register new car";
+}
+
+
+@* 
+    make 
+    model
+    year
+    price
+    milage
+    condition (new/used)
+    image
+    seats
+    MPG
+ *@
+ <div class="col-md-6 offset-md-3">
+<form>
+
+       <h3>Register new car</h3>
+
+  <div class="form-group row">
+    <label for="select" class="col-4 col-form-label">Condition</label> 
+    <div class="col-8">
+      <select id="select" name="select" class="custom-select">
+        <option value="new">new</option>
+        <option value="used">used</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtMake" class="col-4 col-form-label">make</label> 
+    <div class="col-8">
+      <input id="txtMake" name="txtMake" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="text" class="col-4 col-form-label">model</label> 
+    <div class="col-8">
+      <input id="text" name="text" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="text1" class="col-4 col-form-label">year</label> 
+    <div class="col-8">
+      <input id="text1" name="text1" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="text3" class="col-4 col-form-label">mileage</label> 
+    <div class="col-8">
+      <input id="text3" name="text3" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="text4" class="col-4 col-form-label">Image url</label> 
+    <div class="col-8">
+      <input id="text4" name="text4" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="text5" class="col-4 col-form-label">MPG</label> 
+    <div class="col-8">
+      <input id="text5" name="text5" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="select1" class="col-4 col-form-label">seats</label> 
+    <div class="col-8">
+      <select id="select1" name="select1" class="custom-select">
+        <option value="2">2</option>
+        <option value="4">4</option>
+        <option value="6">6</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="text2" class="col-4 col-form-label">price</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-addon">
+          <i class="fa fa-dollar"></i>
+        </div> 
+        <input id="text2" name="text2" type="text" class="form-control">
+      </div>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="button" class="btn btn-primary">
+          <i class="far fa-save"></i>
+          Submit</button>
+    </div>
+  </div>
+</form>
+</div>
