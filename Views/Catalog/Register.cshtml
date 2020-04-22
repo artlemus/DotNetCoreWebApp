@@ -23,7 +23,7 @@
   <div class="form-group row">
     <label for="select" class="col-4 col-form-label">Condition</label> 
     <div class="col-8">
-      <select id="select" name="select" class="custom-select">
+      <select id="selCondition" name="select" class="custom-select">
         <option value="new">new</option>
         <option value="used">used</option>
       </select>
@@ -36,39 +36,45 @@
     </div>
   </div>
   <div class="form-group row">
-    <label for="text" class="col-4 col-form-label">model</label> 
+    <label for="txtColor" class="col-4 col-form-label">color</label> 
     <div class="col-8">
-      <input id="text" name="text" type="text" class="form-control">
+      <input id="txtColor" name="txtMake" type="text" class="form-control">
     </div>
   </div>
   <div class="form-group row">
-    <label for="text1" class="col-4 col-form-label">year</label> 
+    <label for="txtModel" class="col-4 col-form-label">model</label> 
     <div class="col-8">
-      <input id="text1" name="text1" type="number" class="form-control">
+      <input id="txtModel" name="text" type="text" class="form-control">
     </div>
   </div>
   <div class="form-group row">
-    <label for="text3" class="col-4 col-form-label">mileage</label> 
+    <label for="txtYear" class="col-4 col-form-label">year</label> 
     <div class="col-8">
-      <input id="text3" name="text3" type="number" class="form-control">
+      <input id="txtYear" name="text1" type="number" class="form-control">
     </div>
   </div>
   <div class="form-group row">
-    <label for="text4" class="col-4 col-form-label">Image url</label> 
+    <label for="txtMi" class="col-4 col-form-label">mileage</label> 
     <div class="col-8">
-      <input id="text4" name="text4" type="text" class="form-control">
+      <input id="txtMi" name="text3" type="number" class="form-control">
     </div>
   </div>
   <div class="form-group row">
-    <label for="text5" class="col-4 col-form-label">MPG</label> 
+    <label for="txtImg" class="col-4 col-form-label">Image url</label> 
     <div class="col-8">
-      <input id="text5" name="text5" type="number" class="form-control">
+      <input id="txtImg" name="text4" type="text" class="form-control">
     </div>
   </div>
   <div class="form-group row">
-    <label for="select1" class="col-4 col-form-label">seats</label> 
+    <label for="txtMpg" class="col-4 col-form-label">MPG</label> 
     <div class="col-8">
-      <select id="select1" name="select1" class="custom-select">
+      <input id="txtMpg" name="text5" type="number" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="selec" class="col-4 col-form-label">seats</label> 
+    <div class="col-8">
+      <select id="txtSeats" name="select1" class="custom-select">
         <option value="2">2</option>
         <option value="4">4</option>
         <option value="6">6</option>
@@ -83,16 +89,21 @@
           <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
           
         </div> 
-        <input id="text2" name="text2" type="number" class="form-control">
+        <input id="txtPrice" name="text2" type="number" class="form-control">
       </div>
     </div>
   </div> 
   <div class="form-group row">
     <div class="offset-4 col-8">
-      <button name="submit" type="button" class="btn btn-primary">
+      <button id="btnSave" name="submit" type="button" class="btn btn-primary">
           <i class="fas fa-save"></i>
-          Submit</button>
+          Register</button>
     </div>
   </div>
 </form>
 </div>
+
+
+@section Scripts {
+  <script src="/js/register.js"></script>
+}
