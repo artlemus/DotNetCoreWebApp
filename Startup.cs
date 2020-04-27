@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ERP.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace erp
 {
@@ -24,6 +26,10 @@ namespace erp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            // database configuration
+            var conString = "Data source=Cars.db";
+            services.AddDbContext<DataContext>(optionsAction => optionsAction.UseSqlite(conString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

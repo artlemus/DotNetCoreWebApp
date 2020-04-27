@@ -1,0 +1,74 @@
+h1{
+    text-align: center;
+    font-family: 'Bungee Inline', cursive;
+}
+
+h2{
+    padding-top: 125px;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Bungee Inline', cursive;
+    
+    
+}
+
+p{
+    align-items: center;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    .slider{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    
+}
+
+
+
+.blcquote-footer{
+    text-align: center;
+}
+
+.header-image{
+    
+    
+    height: 500px;
+    
+   
+    margin-top: -16px;    
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.26), rgb(0, 0, 0)),  url('/images/headerimg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.form{
+    background-color: rgb(48, 48, 48);
+    border-radius: 15px;
+    text-shadow: black;
+    padding: 20px;
+    opacity: .9;
+}
+
+.jumbotron{
+    border-radius: 15px;
+    opacity: .9;
+}
